@@ -17,10 +17,10 @@
 
     <form id="survey-form">
         <label for="hfirstname">First Name</label>
-        <input type="text" id="name">
+        <input required type="text" id="name">
 
         <label for="he-mail">E-Mail</label>
-        <input type="text" id="email">
+        <input required type="text" id="email">
 
         <label for="hcountry">Select your country:</label>
         <select id="country" name="country">
@@ -29,6 +29,8 @@
           <option value="en">England</option>
           <option value="ot">Other</option>
         </select>
+
+        <button>Submit</button>
     </form>
   </main>
 </body>
