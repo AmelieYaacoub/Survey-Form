@@ -43,7 +43,7 @@ h1 {
   margin-bottom: 50px;
 }
 
-label {
+label, p {
   @include titles;
 }
 
@@ -78,4 +78,9 @@ textarea {
   border: 2px solid #ccc;
   border-radius: var(--border-r);
   resize: none;
+}
+
+
+#flavor {
+  @include inputs;
 }

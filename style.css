@@ -34,7 +34,7 @@ h1 {
   margin-bottom: 50px;
 }
 
-label {
+label, p {
   font-family: 'Tomorrow', sans-serif;
   font-size: 20px;
   margin-bottom: 10px;
@@ -83,5 +83,12 @@ textarea {
   border: 2px solid #ccc;
   border-radius: var(--border-r);
   resize: none;
+}
+
+#flavor {
+  width: 100%;
+  padding: 10px 10px 10px 50px;
+  margin: 30px 20px 30px 20px;
+  background-color: #d1d1d1;
 }
 /*# sourceMappingURL=style.css.map */
