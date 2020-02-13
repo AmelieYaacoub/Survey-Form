@@ -16,6 +16,7 @@
   width: 100%;
   padding: 10px 10px 10px 50px;
   margin: 30px 20px 30px 20px;
+  background-color: #d1d1d1;
 }
 
 
@@ -65,7 +66,6 @@ select {
   @include inputs;
   border: none;
   border-radius: 4px;
-  background-color: #f1f1f1;
   border-radius: var(--border-r);
 }
 

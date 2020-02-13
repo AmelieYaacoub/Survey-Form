@@ -46,6 +46,7 @@ input[type=text] {
   width: 100%;
   padding: 10px 10px 10px 50px;
   margin: 30px 20px 30px 20px;
+  background-color: #d1d1d1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: var(--second-font);
@@ -63,9 +64,9 @@ select {
   width: 100%;
   padding: 10px 10px 10px 50px;
   margin: 30px 20px 30px 20px;
+  background-color: #d1d1d1;
   border: none;
   border-radius: 4px;
-  background-color: #f1f1f1;
   border-radius: var(--border-r);
 }
 
@@ -73,6 +74,7 @@ textarea {
   width: 100%;
   padding: 10px 10px 10px 50px;
   margin: 30px 20px 30px 20px;
+  background-color: #d1d1d1;
   width: 100%;
   height: 150px;
   font-family: var(--second-font);
