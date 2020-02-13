@@ -14,7 +14,7 @@
 
 @mixin inputs {
   width: 100%;
-  padding: 12px 20px;
+  padding: 10px 10px 10px 50px;
   margin: 30px 20px 30px 20px;
 }
 
@@ -53,6 +53,13 @@ input[type=text] {
   font-family: var(--second-font);
   border-radius: var(--border-r);
 }
+input[type=text]:valid {
+  background: url(Pictures/icon-check.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
 
 select {
   @include inputs;
