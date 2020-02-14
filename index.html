@@ -22,12 +22,19 @@
     <p id="description"></p>
 
     <form id="survey-form">
+      <div>
         <label for="hfirstname">First Name</label>
         <input required type="text" id="name" placeholder="Firstname">
-
+      </div>
+      <div>
         <label for="he-mail">E-Mail</label>
         <input required type="text" id="email" placeholder="email@example.com">
-
+      </div>
+      <div>
+        <label for="he-age">Age</label>
+        <input required type="text" id="age" placeholder="Age">
+      </div>
+      <div>
         <label for="hcountry">Select your country:</label>
         <select required id="country" name="country">
           <option value="de">Germany</option>
@@ -35,19 +42,23 @@
           <option value="en">England</option>
           <option value="ot">Other</option>
         </select>
-
+      </div>
+      <div>
         <p>Choose your favorite flavor:</p>
-        <label><input name="flavor" value="chocolate" type="radio" class="input-radio" checked>
+        <label><input name="flavor" value="chocolate" type="radio" class="input-radio">
         Chocolate</label>
         <label><input name="flavor" value="vanilla" type="radio" class="input-radio">
           Vanilla</label> 
         <label><input name="flavor" value="pistachio" type="radio" class="input-radio">
           Pistachio</label>      
-        
+        </div>
+        <div>
         <label for="comment">Please share an comment (optional)
         <textarea placeholder="I would like to mentioned that..."></textarea></label>
-
+      </div>
+      <div>
         <button>Submit</button>
+      </div>
     </form>
   </main>
 

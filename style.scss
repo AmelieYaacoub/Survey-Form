@@ -9,14 +9,18 @@
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 20px;
-  color: darkblue;
+  color: #ff034e;
+  display: grid;
+  justify-content: left;
 }
 
 @mixin inputs {
-  width: 100%;
+  width: 30vw;
   padding: 10px 10px 10px 50px;
   margin: 30px 20px 30px 20px;
   background-color: #d1d1d1;
+  display: grid;
+  justify-content: space-between;
 }
 
 
@@ -27,7 +31,12 @@ body {
   height: 100vh;
   display: grid;
   justify-content: center;
-  background-color: blue;
+  background: url(Pictures/icecream.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 #main {
@@ -35,6 +44,8 @@ body {
   height: auto;
   background-color: white;
   padding: 50px;
+  display: grid;
+  justify-content: center;
 }
 
 h1 {
@@ -83,4 +94,8 @@ textarea {
 
 #flavor {
   @include inputs;
+}
+
+div {
+  flex-direction: column;
 }
