@@ -19,47 +19,66 @@
 <body>
   <main id="main">
     <h1 id="title">Survey</h1>
-    <p id="description"></p>
-
+    <p id="description">Thank you for making the world more icecream!</p>
+<!-- Survey form-->
     <form id="survey-form">
+<!-- First Name row-->
       <div>
-        <label for="hfirstname">First Name</label>
+        <label for="hfirstname">First Name
         <input required type="text" id="name" placeholder="Firstname">
+        </label>
       </div>
+<!-- E-Mail row-->
       <div>
-        <label for="he-mail">E-Mail</label>
-        <input required type="text" id="email" placeholder="email@example.com">
+        <label for="he-mail">E-Mail
+        <input required type="text" id="email" placeholder="yummy@icecream.com">
+        </label>
       </div>
+<!-- Age row-->
       <div>
-        <label for="he-age">Age</label>
+        <label for="he-age">Age
         <input required type="text" id="age" placeholder="Age">
+        </label>
       </div>
+<!-- Country row-->
       <div>
-        <label for="hcountry">Select your country:</label>
-        <select required id="country" name="country">
-          <option value="de">Germany</option>
-          <option value="pt">Portugal</option>
-          <option value="en">England</option>
-          <option value="ot">Other</option>
-        </select>
+        <label for="hcountry">Select your country:
+          <select required id="country" name="country">
+            <option value="de">Germany</option>
+            <option value="pt">Portugal</option>
+            <option value="en">England</option>
+            <option value="ot">Other</option>
+          </select>
+        </label>
       </div>
+<!-- Icecream flavors row-->
       <div>
         <p>Choose your favorite flavor:</p>
-        <label><input name="flavor" value="chocolate" type="radio" class="input-radio">
-        Chocolate</label>
-        <label><input name="flavor" value="vanilla" type="radio" class="input-radio">
-          Vanilla</label> 
-        <label><input name="flavor" value="pistachio" type="radio" class="input-radio">
-          Pistachio</label>      
-        </div>
-        <div>
-        <label for="comment">Please share an comment (optional)
-        <textarea placeholder="I would like to mentioned that..."></textarea></label>
+        <label>
+          <input name="flavor" value="chocolate" type="radio" class="input-radio">
+          Chocolate</input>
+        </label>
+        <label>
+          <input name="flavor" value="vanilla" type="radio" class="input-radio">
+          Vanilla</input>
+        </label> 
+        <label>
+          <input name="flavor" value="pistachio" type="radio" class="input-radio">
+          Pistachio</input>
+        </label>      
       </div>
+<!-- Comment row-->
       <div>
+        <label for="comment">Please share an comment (optional)
+          <textarea placeholder="I would like to mentioned that..."></textarea>
+        </label>
+      </div>
+<!-- Submit Button row-->
+      <div id="button">
         <button>Submit</button>
       </div>
     </form>
+<!-- End survey form-->
   </main>
 
 
