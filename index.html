@@ -17,6 +17,7 @@
 
 
 <body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <main id="main">
     <h1 id="title">Survey</h1>
     <p id="description">Thank you for making the world more icecream!</p>
@@ -24,25 +25,25 @@
     <form id="survey-form">
 <!-- First Name row-->
       <div>
-        <label for="hfirstname">First Name
+        <label id="name-label" for="name">First Name
         <input required type="text" id="name" placeholder="Firstname">
         </label>
       </div>
 <!-- E-Mail row-->
       <div>
-        <label for="he-mail">E-Mail
-        <input required type="text" id="email" placeholder="yummy@icecream.com">
+        <label id="email-label" for="email">E-Mail
+        <input required type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="This E-Mail adress is invalid. Please use @" placeholder="yummy@icecream.com">
         </label>
       </div>
 <!-- Age row-->
       <div>
-        <label for="he-age">Age
-        <input required type="text" id="age" placeholder="Age">
+        <label id="number-label" for="number">Age
+        <input required type="number" name="age" id="number" min="10" max="99" placeholder="Age" pattern="[0-9]{2}">
         </label>
       </div>
 <!-- Country row-->
       <div>
-        <label for="hcountry">Select your country:
+        <label id="dropdown" for="dropdown">Select your country:
           <select required id="country" name="country">
             <option value="de">Germany</option>
             <option value="pt">Portugal</option>
@@ -67,6 +68,22 @@
           Pistachio</input>
         </label>      
       </div>
+<!-- Icecream Wishes row-->
+      <div>
+        <p>What could we do better?</p>
+        <label>
+          <input name="wish" value="We-need-more-different-icecream-flavors" type="checkbox" class="input-checkbox">
+          We need more different icecream flavors.</input>
+        </label>
+        <label>
+          <input name="wish" value="The-world-has-not-enough-icecream-stores" type="checkbox" class="input-checkbox">
+          The world has not enough icecream stores.</input>
+        </label> 
+        <label>
+          <input name="wish" value="I-want-to-be-an-icecream" type="checkbox" class="input-checkbox">
+          I want to be an icecream...</input>
+        </label>      
+      </div>
 <!-- Comment row-->
       <div>
         <label for="comment">Please share an comment (optional)
@@ -74,8 +91,8 @@
         </label>
       </div>
 <!-- Submit Button row-->
-      <div id="button">
-        <button>Submit</button>
+      <div id="submit-button">
+        <button id="submit">Submit</button>
       </div>
     </form>
 <!-- End survey form-->
