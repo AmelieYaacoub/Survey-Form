@@ -23,3 +23,5 @@ My Survey Form includes:
 
 - HTML
 - CSS
+- SASS
+- jQuery
